@@ -50,3 +50,59 @@
         font-size: 14px;
     }
 }
+
+
+@media screen and (min-width: 768px) {
+
+    .section__searchbar {
+        width: 551px;
+        text-indent: 12%; 
+
+        &-icon {
+            left: unset;
+            right: 6%;
+        }
+    }
+
+    .section__trending {
+        margin-top: 54px;
+        font-size: 18px;
+    }
+
+    .section__trending-text {
+        margin-top: 0;
+        margin-bottom: 2em;
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .section {
+        &__search--img {
+            width: 399px;
+            height: 190px;
+            margin: 20px auto 0;
+        }
+
+        &__searchbar {
+            text-indent: 9.8%;
+
+            &-icon {
+                left: unset;
+                right: 3.6%;
+            }
+        }
+
+        &__trending {
+            margin-top: 73px;
+        }
+
+        &__trending-text {
+            margin: 0 auto 95px;
+        }
+    }
+
+}

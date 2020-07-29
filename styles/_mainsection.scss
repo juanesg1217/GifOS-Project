@@ -42,3 +42,33 @@
     }
     
 }
+
+@media screen and (min-width: 768px) {
+
+    .main__trending-text {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .main {
+        margin-top: 0;
+
+        &__trending-title {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        &__trending-text {
+            font-size: 18px;
+            margin-bottom: 53px;
+
+            span {
+                display: inline;
+            }
+        }
+    }
+
+}
