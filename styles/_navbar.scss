@@ -113,18 +113,43 @@
 
 }
 
+@media screen and (min-width: 768px) {
+
+  .header__navbar {
+    &--menu-desplegable {
+      .lista, li {
+        margin: 1em 0 2.4em;
+        li a {
+          font-size: 22px;
+        }
+
+        .lista_underline {
+          width: 75px;
+        }
+      }
+    }    
+  }
+
+  .header__title {
+    margin: 20px 15%;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+}
+
 @media screen and (min-width: 1024px) {
 
   .header__navbar {
     height: 90px;
     display: flex;
-    
+
     &--logo {
       position: absolute;
       top: 23px;
-      left: 10.8%;
-      width: 59.1px;
-      height: 59.1px;
+      left: 8%;
+      width: 52px;
+      height: 52px;
     }
 
     &--menu-hamburguesa, &--checkbox:checked ~ &--close-menu-hamburguesa {
@@ -138,12 +163,13 @@
       transition: none;
       overflow: visible;
       top: 5px;
-      width: 373.5px;
+      width: 350px;
       left: unset;
-      right: 18.7%;   
+      right: 16%;   
 
       .lista {   
-        padding: 0;
+        margin: 0;
+        padding: 10px 0 0;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -174,13 +200,13 @@
     }
 
     &--create-circle {
-      width: 54px;
-      height: 54px;
+      width: 50px;
+      height: 50px;
       border: 1px solid #572EE5;
       border-radius: 50%;
       position: absolute;
       left: unset;
-      right: 10.8%; //resolution for 1440px
+      right: 7%; 
       top: 21px;
       display: flex;
       justify-content: center;
@@ -209,9 +235,39 @@
   }
 
   .header__title {
+    margin: 65px 23%;
+    font-size: 33px;
+    line-height: 50px;
+  }
+  
+}
+
+@media screen and (min-width: 1440px) {
+
+  .header__navbar {
+    
+    &--logo {
+      width: 59.1px;
+      height: 59.1px;
+      left: 10.8%;
+    }
+
+    &--menu-desplegable {
+      width: 373.5px;
+      right: 18.7%;     
+    }
+
+    &--create-circle {
+      width: 54px;
+      height: 54px;
+      right: 10.8%; 
+    }
+  }
+
+  .header__title {
     margin: 76px 29%;
     font-size: 35px;
-    line-height: 50px;
   }
 
 }
+

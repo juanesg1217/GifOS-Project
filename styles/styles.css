@@ -116,6 +116,23 @@
   color: #5ED7C6;
 }
 
+@media screen and (min-width: 768px) {
+  .header__navbar--menu-desplegable .lista, .header__navbar--menu-desplegable li {
+    margin: 1em 0 2.4em;
+  }
+  .header__navbar--menu-desplegable .lista li a, .header__navbar--menu-desplegable li li a {
+    font-size: 22px;
+  }
+  .header__navbar--menu-desplegable .lista .lista_underline, .header__navbar--menu-desplegable li .lista_underline {
+    width: 75px;
+  }
+  .header__title {
+    margin: 20px 15%;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .header__navbar {
     height: 90px;
@@ -126,9 +143,9 @@
   .header__navbar--logo {
     position: absolute;
     top: 23px;
-    left: 10.8%;
-    width: 59.1px;
-    height: 59.1px;
+    left: 8%;
+    width: 52px;
+    height: 52px;
   }
   .header__navbar--menu-hamburguesa, .header__navbar--close-menu-hamburguesa, .header__navbar--checkbox:checked ~ .header__navbar--close-menu-hamburguesa {
     display: none;
@@ -141,12 +158,13 @@
     transition: none;
     overflow: visible;
     top: 5px;
-    width: 373.5px;
+    width: 350px;
     left: unset;
-    right: 18.7%;
+    right: 16%;
   }
   .header__navbar--menu-desplegable .lista {
-    padding: 0;
+    margin: 0;
+    padding: 10px 0 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -178,13 +196,13 @@
     display: none;
   }
   .header__navbar--create-circle {
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
     border: 1px solid #572EE5;
     border-radius: 50%;
     position: absolute;
     left: unset;
-    right: 10.8%;
+    right: 7%;
     top: 21px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -211,9 +229,30 @@
     border: 1px solid #9CAFC3;
   }
   .header__title {
+    margin: 65px 23%;
+    font-size: 33px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header__navbar--logo {
+    width: 59.1px;
+    height: 59.1px;
+    left: 10.8%;
+  }
+  .header__navbar--menu-desplegable {
+    width: 373.5px;
+    right: 18.7%;
+  }
+  .header__navbar--create-circle {
+    width: 54px;
+    height: 54px;
+    right: 10.8%;
+  }
+  .header__title {
     margin: 76px 29%;
     font-size: 35px;
-    line-height: 50px;
   }
 }
 
