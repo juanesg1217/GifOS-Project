@@ -72,11 +72,11 @@
           flex-direction: column;
 }
 
-.header__navbar--menu-desplegable .lista .lista-item {
+.header__navbar--menu-desplegable .lista-item {
   list-style: none;
 }
 
-.header__navbar--menu-desplegable .lista .lista-item a {
+.header__navbar--menu-desplegable .lista-item a {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 600;
