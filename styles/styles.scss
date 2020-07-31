@@ -2,3 +2,8 @@
 @import './searchsection';
 @import './mainsection';
 @import './footer';
+@import './favoritos_mis-gifos';
+
+html {
+    scroll-behavior: smooth;
+}

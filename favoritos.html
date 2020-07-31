@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="sitio web que contiene un catálogo de diferentes GIFs">
         <meta name="keywords" content="GIFs, trendings, imagenes, Giphy, entretenimiento, comunidad">
-        <title>GIFOS Home</title>
+        <title>GIFOS Favoritos</title>
 
         <!--Style Sheets-->
         <link rel="stylesheet" href="./styles/normalize.css">
@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="./fonts/fonts-style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        
+    
     </head>
     <body>
         <header class="header">
@@ -26,26 +26,36 @@
                 <img class="header__navbar--close-menu-hamburguesa" src="./images/svg/close.svg" alt="logo cerrar menu hamburguesa">
                 <div class="header__navbar--menu-desplegable">
                     <ul class="lista">
-                        <li class="lista-item"><a href="#">Modo Nocturno</a></li>
-                        <li class="lista-item"><a href="./favoritos.html">Favoritos</a></li>
-                        <li class="lista-item"><a href="./mis-gifos.html">Mis GIFOS</a></li>
-                    <!-- HAY QUE HACER LAS LINEAS DEBAJO DE LAS PALABRAS -->
+                    <li><a href="#">Modo Nocturno</a></li><div class="lista_underline"></div>
+                    <li><a href="./favoritos.html">Favoritos</a></li><div class="lista_underline"></div>
+                    <li><a href="./mis-gifos.html">Mis GIFOS</a></li><div class="lista_underline"></div>
                     </ul>
                 </div>
                 <div class="header__navbar--create-circle">
                     <i class="icon-button-crear-gifo"></i>
                 </div>
             </nav>
-            <h1 class="header__title">Insp&iacute;rate, busca, guarda, y crea los mejores <span class="header__title--gifos">gifos</span></h1>
         </header>
-        <section class="section">       
-            <img class="section__search--img" src="./images/svg/ilustra_header.svg" alt="Imagen de caricaturas saludando">
-            <div class="section__searchbar">
-                <input class="section__searchbar-input" type="search" placeholder="Busca GIFOS y más">
-                <i class="icon-icon-search"></i>
+        <section class="favoritos">  
+            <img class="favoritos__logo" src="./images/svg/icon-favoritos.svg" alt="logo de favoritos">     
+            <h2 class="favoritos__title">Favoritos</h2>
+            <figure class="favoritos__images--container">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+                <img class="favoritos-image" src="https://picsum.photos/156/120" alt="imagen gifos">
+            </figure>
+            <div class="favoritos__view-more">
+                <p class="favoritos__view-more-title">ver m&aacute;s</p>
             </div>
-            <h3 class="section__trending">Trending:</h3>
-            <p class="section__trending-text">Reactions, Entertainment, Sports, Stickers, Artists</p>
         </section>
         <main class="main">
             <h3 class="main__trending-title">Trending GIFOS</h3>
@@ -69,5 +79,6 @@
             </div>
             <p class="footer__copyright">&copy; GIFOS 2020 All Rights Reserved.</p>
         </footer>
+        
     </body>
 </html>

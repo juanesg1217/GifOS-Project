@@ -4,7 +4,6 @@
     font-family: 'Montserrat', sans-serif;
     
     &__search--img {
-        //width: 72.8%;
         max-width: 72.8%;
         height: auto;
         margin: 27px auto 0;
@@ -16,23 +15,29 @@
         margin: 0 auto;
         border: 1px solid #572EE5;
         border-radius: 27px;
-        text-indent: 16.5%;
         position: relative;
 
         &-input {
+            position: absolute;
+            width: 98%;
+            height: 90%;
+            border-radius: 27px;
             border: none;
             outline: none;
-            padding-top: 15px;
-            line-height: 20px;
+            padding-top: 2px;   
+            text-indent: 16%;
             font-weight: 600;
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
         }
 
-        &-icon {
+        .icon-icon-search {
+            color: #572EE5;
+            font-size: 20px;
             position: absolute;
             top: 15px;
             left: 88%;
+            cursor: pointer;
         }
     }
 
@@ -56,9 +61,12 @@
 
     .section__searchbar {
         width: 551px;
-        text-indent: 12%; 
 
-        &-icon {
+        &-input {
+            text-indent: 12%;
+        }
+
+        .icon-icon-search {
             left: unset;
             right: 6%;
         }
@@ -88,9 +96,11 @@
         }
 
         &__searchbar {
-            text-indent: 9.8%;
+            &-input {
+                text-indent: 9.8%;
+            }
 
-            &-icon {
+            .icon-icon-search{
                 left: unset;
                 right: 3.6%;
             }

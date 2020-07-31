@@ -32,3 +32,31 @@
         margin: 46px auto 23px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+
+   .footer {
+       display: flex;
+       height: 116px;
+
+       &__share {
+           margin-right: 17px;
+           padding-top: 2px;
+       }
+
+       &__socialmedia-icons {
+           width: auto;
+
+           .fab {
+               margin-top: 47.4px;
+               padding-top: 2px;
+           }
+       }
+
+       &__copyright {
+           margin-left: 51%;
+           padding-top: 2px;
+       }
+   } 
+
+}

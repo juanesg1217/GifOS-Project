@@ -64,7 +64,7 @@
       display: flex;
       flex-direction: column;
       
-      li {
+      .lista-item {
         list-style: none;
           
         a {    
@@ -77,13 +77,24 @@
         }
       }
 
-      .lista_underline {
-        text-align: center;
-        margin: -4px auto;
-        width: 40px;
-        height: 1px;
-        background-color: rgba(255, 255, 255, 0.5);
-      }
+      // .lista-item::after {
+      //   content: "";
+      //   text-align: center;
+      //   margin: -4px auto;
+      //   width: 40px;
+      //   height: 1px;
+      //   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      //   background-color: rgba(255, 255, 255, 0.5);
+      //   z-index: 5;
+      // }
+
+      // .lista_underline {
+      //   text-align: center;
+      //   margin: -4px auto;
+      //   width: 40px;
+      //   height: 1px;
+      //   background-color: rgba(255, 255, 255, 0.5);
+      // }
     } 
   }
 
@@ -94,7 +105,6 @@
   &--create-circle {
     display: none;
   }
-
 }
 
 .header__title {
@@ -110,22 +120,21 @@
     text-transform: uppercase;
     color: #5ED7C6;
   }
-
 }
 
 @media screen and (min-width: 768px) {
 
   .header__navbar {
     &--menu-desplegable {
-      .lista, li {
+      .lista, .lista-item {
         margin: 1em 0 2.4em;
-        li a {
+        .lista-item a {
           font-size: 22px;
         }
 
-        .lista_underline {
-          width: 75px;
-        }
+        // .lista_underline {
+        //   width: 75px;
+        // }
       }
     }    
   }
@@ -135,7 +144,7 @@
     font-size: 28px;
     line-height: 40px;
   }
-
+  
 }
 
 @media screen and (min-width: 1024px) {
@@ -175,7 +184,7 @@
         align-items: center;
         height: 90px;      
 
-        li a {
+        .lista-item a {
           text-transform: uppercase;
           font-size: 13px;
           font-family: 'Montserrat', sans-serif;
@@ -193,9 +202,9 @@
           }
         }        
 
-        .lista_underline {
-          display: none;
-        }
+        // .lista_underline {
+        //   display: none;
+        // }
       }
     }
 
@@ -210,20 +219,18 @@
       top: 21px;
       display: flex;
       justify-content: center;
+      align-items: center;
       cursor: pointer;
 
-      &-symbol-white {
-        display: none;
+      .icon-button-crear-gifo {
+        color: #572EE5;
       }
 
       &:hover {
         background-color: #572EE5;
-        
-        .header__navbar--create-circle-symbol {
-          display: none;
-        }
-        .header__navbar--create-circle-symbol-white {
-          display: inline-block;
+
+        .icon-button-crear-gifo {
+          color: white;
         }
       }
 

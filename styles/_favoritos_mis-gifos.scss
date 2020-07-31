@@ -1,0 +1,103 @@
+.favoritos, .mis-gifos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 0 21px;
+
+    &__logo {
+        margin: 5px auto 7px;
+    }
+
+    &__title {
+        font-size: 20px;
+        color: #572EE5;
+        line-height: 30px;
+        margin: 0 auto 46px;
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+
+    &__images--container {
+        width: 100%;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+        grid-gap: 21px;
+    
+        .favoritos-image, .mis-gifos-image {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+
+    &__view-more {
+        width: 127px;
+        height: 50px;
+        border: 1px solid #572EE5;
+        border-radius: 25px;
+        margin: 78px auto 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &-title {
+            text-transform: uppercase;
+            font-size: 13px;
+            color: #572EE5;
+        }
+
+        &:hover {
+            background-color: #572EE5;
+
+            .favoritos__view-more-title, .mis-gifos__view-more-title  {
+                color: white;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .favoritos, .mis-gifos {
+        padding: 0 50px;
+
+        &__logo {
+            margin-top: 1em;
+        }
+
+        &__images--container {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .favoritos, .mis-gifos {
+        padding: 0 10.8%;
+
+        &__title {
+            font-size: 25px;
+            margin-bottom: 1.44em;
+        }
+
+        &__images--container {
+            //grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &__view-more {
+            margin-bottom: 79px;
+        }
+    }
+
+}
