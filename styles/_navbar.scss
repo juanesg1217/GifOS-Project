@@ -66,6 +66,15 @@
       
       &-item {
         list-style: none;
+
+        &::after {
+          content: "";
+          display: block;
+          margin: -4px auto;
+          width: 10.9%;
+          height: 1px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);        
+        }
           
         a {    
           font-family: 'Montserrat', sans-serif;
@@ -76,25 +85,6 @@
           color: white;
         }
       }
-
-      // &-item::after {
-      //   content: "";
-      //   text-align: center;
-      //   margin: -4px auto;
-      //   width: 40px;
-      //   height: 1px;
-      //   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      //   background-color: rgba(255, 255, 255, 0.5);
-      //   z-index: 5;
-      // }
-
-      // .lista_underline {
-      //   text-align: center;
-      //   margin: -4px auto;
-      //   width: 40px;
-      //   height: 1px;
-      //   background-color: rgba(255, 255, 255, 0.5);
-      // }
     } 
   }
 
@@ -131,10 +121,6 @@
         .lista-item a {
           font-size: 22px;
         }
-
-        // .lista_underline {
-        //   width: 75px;
-        // }
       }
     }    
   }
@@ -201,10 +187,6 @@
             border-bottom: none;
           }
         }        
-
-        // .lista_underline {
-        //   display: none;
-        // }
       }
     }
 
