@@ -110,7 +110,8 @@
                     top: 0;
                     overflow: hidden;
                     display: flex;
-                    justify-content: flex-end;
+                    justify-content: flex-end;    
+                    transition: all 0.4s linear;
             
                     .hover-container {
                         display: none;
@@ -118,7 +119,8 @@
             
                     &:hover {
                         background-color: rgba(74,30,227,0.6);
-            
+                        transition: all 0.2s linear;
+                    
                         .hover-container {
                             background-color: rgba(255,255,255,0.70);
                             width: 2em;

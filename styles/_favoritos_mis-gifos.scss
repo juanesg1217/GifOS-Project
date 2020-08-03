@@ -110,6 +110,7 @@
                 overflow: hidden;
                 display: flex;
                 justify-content: flex-end;
+                transition: all 0.4s linear;
 
                 .hover-container {
                     display: none;
@@ -117,6 +118,7 @@
 
                 &:hover {
                     background-color: rgba(74,30,227,0.6);
+                    transition: all 0.2s linear;
 
                     .hover-container {
                         background-color: rgba(255,255,255,0.70);
@@ -128,7 +130,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        cursor: pointer;
+                        cursor: pointer;   
     
                         .icon-hover {
                             color: #572EE5;

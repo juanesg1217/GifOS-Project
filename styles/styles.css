@@ -477,12 +477,16 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
   }
   .main__trending--container-images .image-container .trending-image-hover .hover-container {
     display: none;
   }
   .main__trending--container-images .image-container .trending-image-hover:hover {
     background-color: rgba(74, 30, 227, 0.6);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
   .main__trending--container-images .image-container .trending-image-hover:hover .hover-container {
     background-color: rgba(255, 255, 255, 0.7);
@@ -736,12 +740,16 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
   }
   .favoritos__images--container .image-container .favoritos-image-hover .hover-container, .favoritos__images--container .image-container .mis-gifos-image-hover .hover-container, .mis-gifos__images--container .image-container .favoritos-image-hover .hover-container, .mis-gifos__images--container .image-container .mis-gifos-image-hover .hover-container {
     display: none;
   }
   .favoritos__images--container .image-container .favoritos-image-hover:hover, .favoritos__images--container .image-container .mis-gifos-image-hover:hover, .mis-gifos__images--container .image-container .favoritos-image-hover:hover, .mis-gifos__images--container .image-container .mis-gifos-image-hover:hover {
     background-color: rgba(74, 30, 227, 0.6);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
   .favoritos__images--container .image-container .favoritos-image-hover:hover .hover-container, .favoritos__images--container .image-container .mis-gifos-image-hover:hover .hover-container, .mis-gifos__images--container .image-container .favoritos-image-hover:hover .hover-container, .mis-gifos__images--container .image-container .mis-gifos-image-hover:hover .hover-container {
     background-color: rgba(255, 255, 255, 0.7);
