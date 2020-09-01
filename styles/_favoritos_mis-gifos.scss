@@ -37,7 +37,7 @@
                 cursor: pointer;
             }
 
-            .favoritos-image-hover, .mis-gifos-image-hover {
+            .favoritos-image-hover, .mis-gifos-image-hover, .favoritos-user, .favoritos-title, .mis-gifos-user, .mis-gifos-title {
                 background-color: transparent;
                 display: none;
             }
@@ -148,6 +148,29 @@
                         }
                     }
                 }
+            }
+
+            .favoritos-user, .favoritos-title, .mis-gifos-user, .mis-gifos-title {
+                position: absolute;
+                color: white;
+                margin: 0 5.18%;
+                font-family: 'Roboto', sans-serif;
+                text-align: left;
+            }
+
+            .favoritos-image-hover:hover ~ .favoritos-user, .mis-gifos-image-hover:hover ~ .mis-gifos-user {
+                display: block;
+                bottom: 51px;
+                line-height: 18px;
+                font-size: 15px;
+                font-weight: 300;
+            }
+
+            .favoritos-image-hover:hover ~ .favoritos-title, .mis-gifos-image-hover:hover ~ .mis-gifos-title {
+                display: block;
+                bottom: 26px;
+                line-height: 19px;
+                font-size: 16px;
             }
         }
 

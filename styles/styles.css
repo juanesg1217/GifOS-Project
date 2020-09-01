@@ -419,7 +419,7 @@
   height: 187px;
 }
 
-.main__trending--container-images .image-container .trending-image-hover {
+.main__trending--container-images .image-container .trending-image-hover, .main__trending--container-images .image-container .trending-user, .main__trending--container-images .image-container .trending-title {
   display: none;
 }
 
@@ -518,6 +518,26 @@
   .main__trending--container-images .image-container .trending-image-hover:hover .hover-container:hover {
     background-color: white;
     opacity: 1;
+  }
+  .main__trending--container-images .image-container .trending-user, .main__trending--container-images .image-container .trending-title {
+    position: absolute;
+    color: white;
+    margin: 0 5.18%;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+  }
+  .main__trending--container-images .image-container .trending-image-hover:hover ~ .trending-user {
+    display: block;
+    bottom: 76px;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .main__trending--container-images .image-container .trending-image-hover:hover ~ .trending-title {
+    display: block;
+    bottom: 51px;
+    line-height: 19px;
+    font-size: 16px;
   }
   .main__trending--container-slider {
     width: 40px;
@@ -666,7 +686,7 @@
   cursor: pointer;
 }
 
-.favoritos__images--container .image-container .favoritos-image-hover, .favoritos__images--container .image-container .mis-gifos-image-hover, .mis-gifos__images--container .image-container .favoritos-image-hover, .mis-gifos__images--container .image-container .mis-gifos-image-hover {
+.favoritos__images--container .image-container .favoritos-image-hover, .favoritos__images--container .image-container .mis-gifos-image-hover, .favoritos__images--container .image-container .favoritos-user, .favoritos__images--container .image-container .favoritos-title, .favoritos__images--container .image-container .mis-gifos-user, .favoritos__images--container .image-container .mis-gifos-title, .mis-gifos__images--container .image-container .favoritos-image-hover, .mis-gifos__images--container .image-container .mis-gifos-image-hover, .mis-gifos__images--container .image-container .favoritos-user, .mis-gifos__images--container .image-container .favoritos-title, .mis-gifos__images--container .image-container .mis-gifos-user, .mis-gifos__images--container .image-container .mis-gifos-title {
   background-color: transparent;
   display: none;
 }
@@ -781,6 +801,26 @@
   .favoritos__images--container .image-container .favoritos-image-hover:hover .hover-container:hover, .favoritos__images--container .image-container .mis-gifos-image-hover:hover .hover-container:hover, .mis-gifos__images--container .image-container .favoritos-image-hover:hover .hover-container:hover, .mis-gifos__images--container .image-container .mis-gifos-image-hover:hover .hover-container:hover {
     background-color: white;
     opacity: 1;
+  }
+  .favoritos__images--container .favoritos-user, .favoritos__images--container .favoritos-title, .favoritos__images--container .mis-gifos-user, .favoritos__images--container .mis-gifos-title, .mis-gifos__images--container .favoritos-user, .mis-gifos__images--container .favoritos-title, .mis-gifos__images--container .mis-gifos-user, .mis-gifos__images--container .mis-gifos-title {
+    position: absolute;
+    color: white;
+    margin: 0 5.18%;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+  }
+  .favoritos__images--container .favoritos-image-hover:hover ~ .favoritos-user, .favoritos__images--container .mis-gifos-image-hover:hover ~ .mis-gifos-user, .mis-gifos__images--container .favoritos-image-hover:hover ~ .favoritos-user, .mis-gifos__images--container .mis-gifos-image-hover:hover ~ .mis-gifos-user {
+    display: block;
+    bottom: 51px;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .favoritos__images--container .favoritos-image-hover:hover ~ .favoritos-title, .favoritos__images--container .mis-gifos-image-hover:hover ~ .mis-gifos-title, .mis-gifos__images--container .favoritos-image-hover:hover ~ .favoritos-title, .mis-gifos__images--container .mis-gifos-image-hover:hover ~ .mis-gifos-title {
+    display: block;
+    bottom: 26px;
+    line-height: 19px;
+    font-size: 16px;
   }
   .favoritos__view-more, .mis-gifos__view-more {
     margin-bottom: 79px;

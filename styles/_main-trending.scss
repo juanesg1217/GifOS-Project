@@ -50,7 +50,7 @@
                     height: 187px;
                 }
 
-                .trending-image-hover {
+                .trending-image-hover, .trending-user, .trending-title {
                     display: none;
                 }
             }
@@ -149,10 +149,31 @@
                             }
                         }
                     }
-                }   
+                    // **END HERE**
+                }
 
-            // **END HERE**
+                .trending-user, .trending-title {
+                    position: absolute;
+                    color: white;
+                    margin: 0 5.18%;
+                    font-family: 'Roboto', sans-serif;
+                    text-align: left;
+                }
 
+                .trending-image-hover:hover ~ .trending-user {
+                    display: block;
+                    bottom: 76px;
+                    line-height: 18px;
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+
+                .trending-image-hover:hover ~ .trending-title {
+                    display: block;
+                    bottom: 51px;
+                    line-height: 19px;
+                    font-size: 16px;
+                }
             }              
         
             &-slider {
