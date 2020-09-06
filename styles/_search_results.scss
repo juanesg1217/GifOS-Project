@@ -1,0 +1,23 @@
+.search__results--container {
+    @extend .favoritos;
+    margin-top: 35px;
+    //display: none;
+    
+    &::before {
+        content: '';
+        width: 157px;
+        border-top: 1px solid rgba(156, 175, 195, 0.5);
+    }
+
+    .search__results-title {
+        color: #572EE5;
+        line-height: 40px;
+        margin: 43px auto 38px;
+    }
+
+    .search__results-images {
+        @extend .favoritos__images--container;
+        
+    }
+}
+
